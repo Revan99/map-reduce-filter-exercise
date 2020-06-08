@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <div id="control-panel">
+          <form id="search-form" style="display: inline-block;">
+            <select id="platform-select">
+              <option value="-1">All</option>
+              <option value="34">Android</option>
+              <option value="14">Mac</option>
+              <option value="48">PlayStation 4</option>
+              <option value="39">iOS</option>
+              <option value="3">Linux</option>
+              <option value="6">PC (Microsoft Windows)</option>
+              <option value="49">Xbox One</option>
+            </select>
+            <input id="search-input" type="text" placeholder="Search Games" />
+            <input type="submit" value="Search" />
+          </form>
+          <div style="display: inline-block;">
+            <h4>Count by platform</h4>
+            <ul id="summary-list"></ul>
+          </div>
+        </div>
+        <div id="games-holder"></div>
+      </div>
+  
+      <script src="src/index.js"></script>
+</body>
+</html>
